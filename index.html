@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aero Zurich - Private Aviation Architecture for the Velvet Elite.">
+    <title>AERO ZURICH | Private Office</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="screen-loader">
+        <div class="loader-line"></div>
+    </div>
+
+    <header class="master-header">
+        <div class="brand-monogram">AERO ZURICH</div>
+        <nav class="nav-minimal">
+            <a href="#fleet" class="nav-link">Fleet</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#reserve" class="nav-link action-trigger">Request Intelligence</a>
+        </nav>
+    </header>
+
+    <main class="viewport-container">
+        
+        <section class="hero-cinematic">
+            <div class="video-overlay"></div>
+            <div class="media-canvas">
+                <video autoplay muted loop playsinline class="hero-video" poster="assets/media/hero-fallback.webp">
+                    <source src="assets/media/cabin-4k.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="hero-content">
+                <h1 class="headline-sixty">The Art of Absolute Motion</h1>
+                <p class="subline-velvet">Tailored flight architectures for the Swiss velvet elite. Zero latency. Infinite precision.</p>
+            </div>
+        </section>
+
+        <section id="fleet" class="fleet-architecture-area">
+            <div class="section-container">
+                <div class="section-meta">01 / THE FLEET</div>
+                <h2 class="section-title">Elite Flagships</h2>
+                
+                <div class="fleet-grid">
+                    <div class="fleet-card active" data-fleet="0">
+                        <div class="card-bg" style="background-image: url('assets/media/hero-fallback.webp');"></div>
+                        <div class="card-content">
+                            <span class="aircraft-range">Ultra Long Range</span>
+                            <h3 class="aircraft-name">Zenith Silhouette</h3>
+                        </div>
+                    </div>
+                    <div class="fleet-card" data-fleet="1">
+                        <div class="card-bg" style="background-image: url('assets/media/cabin-interior.webp');"></div>
+                        <div class="card-content">
+                            <span class="aircraft-range">Intimate Micro-Cabin</span>
+                            <h3 class="aircraft-name">Obsidian Legacy</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="immersive-experience-area">
+            <div class="experience-split">
+                <div class="exp-media-block">
+                    <div class="exp-image" style="background-image: url('assets/media/cabin-interior.webp');"></div>
+                </div>
+                <div class="exp-text-block">
+                    <div class="section-meta">02 / IMMERSIVE CONTEXT</div>
+                    <h2 class="section-title">Tactile Sovereignty</h2>
+                    <p class="paragraph-velvet">Every interaction within our digital and physical architectures is refined beyond the threshold of standard luxury. From brushed liquid silver control panels to dark charcoal wood grain alignments, precision is our only standard.</p>
+                    <div class="spec-list">
+                        <div class="spec-item"><span>Latency</span><span>0.0s</span></div>
+                        <div class="spec-item"><span>Cabin Atmosphere</span><span>Atmospheric Precision</span></div>
+                        <div class="spec-item"><span>Privacy Tier</span><span>Absolute Sovereign</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reserve" class="signature-booking-area">
+            <div class="booking-wrapper">
+                <div class="section-meta">03 / SIGNATURE UI</div>
+                <h2 class="section-title">Configure Trajectory</h2>
+                
+                <form id="booking-engine" class="velvet-form" onsubmit="event.preventDefault();">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="destination">Destination</label>
+                            <input type="text" id="destination" autocomplete="off" placeholder="Zurich Inside / Geneva Private / Worldwide" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="date">Departure Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="guests">Passengers</label>
+                            <div class="counter-input">
+                                <input type="number" id="guests" min="1" max="19" value="1" readonly>
+                                <div class="counter-controls">
+                                    <button type="button" class="ctrl-btn" data-dir="up">+</button>
+                                    <button type="button" class="ctrl-btn" data-dir="down">−</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-action">
+                        <button type="submit" class="submit-premium">
+                            <span class="btn-text">Initialize Blueprint</span>
+                            <span class="btn-arrow"></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="master-footer">
+        <div class="footer-legal">© 2026 Aero Zurich. Private Office Blueprint. All rights reserved.</div>
+    </footer>
+
+    <script src="js/engine.js"></script>
+</body>
+</html>
